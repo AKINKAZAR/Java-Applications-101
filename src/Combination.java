@@ -44,7 +44,7 @@ public class Combination {
             if (isError) {
                 System.out.println("C(n,r): " + result);
             } else {
-                System.out.println("Alt Küme Eleman sayısı Ana Kümenin Eleman Sayısından Büyük Olamaz!!");
+                System.out.println("Alt Kümenin Eleman sayısı Ana Kümenin Eleman Sayısından Büyük Olamaz!!");
             }
         } else {
             System.out.println("Küme ve Alt Küme sayısı 1 den küçük olamaz.");
