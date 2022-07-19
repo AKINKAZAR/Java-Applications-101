@@ -1,5 +1,7 @@
 package IfElseAndSwitchCase;
 
+import java.util.Scanner;
+
 public class ZodiacSign {
     public static void main(String[] args) {
         int month, day;
