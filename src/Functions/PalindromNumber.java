@@ -5,8 +5,7 @@ import java.util.Scanner;
 public class PalindromNumber {
     public static boolean isPalindrom(int number) {
 
-        int reverseNumber = 0;
-        int temp = number;
+        int reverseNumber = 0, temp = number;
         boolean isPalindrom = false;
 
         while (temp != 0) {
