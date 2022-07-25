@@ -9,8 +9,9 @@ public class RecursivePrimeNumber {
         if (number > divNumber) {
             if (number % divNumber == 0) {
                 return 1;
+            } else {
+                return primaryNumber(number, divNumber + 1);
             }
-            return primaryNumber(number, divNumber + 1);
         } else {
             return 0;
         }
