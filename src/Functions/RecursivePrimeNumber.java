@@ -4,16 +4,16 @@ import java.util.Scanner;
 
 public class RecursivePrimeNumber {
 
-    public static int primaryNumber(int number, int divNumber) {
+    public static boolean primaryNumber(int number, int divNumber) {
 
         if (number > divNumber) {
             if (number % divNumber == 0) {
-                return 1;
+                return true;
             } else {
                 return primaryNumber(number, divNumber + 1);
             }
         } else {
-            return 0;
+            return false;
         }
     }
 
@@ -24,7 +24,7 @@ public class RecursivePrimeNumber {
         System.out.print("Sayı Giriniz: ");
         number = input.nextInt();
 
-        if (primaryNumber(number, 2) == 1) {
+        if (primaryNumber(number, 2)) {
             System.out.println(number + " sayısı ASAL değildir !");
         } else {
             System.out.println(number + " sayısı ASALDIR !");
