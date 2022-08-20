@@ -16,8 +16,8 @@ public class LettersWithArrays {
             }
         }
 
-        for (String[] row : list){
-            for (String col : row){
+        for (String[] row : list) {
+            for (String col : row) {
                 System.out.print(col);
             }
             System.out.println();
