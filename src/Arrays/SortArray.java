@@ -20,7 +20,6 @@ public class SortArray {
 
     public static void takeValue(int[] list) {
         Scanner input = new Scanner(System.in);
-        System.out.println("Dizinin boyutu n: " + list.length);
         System.out.println("Dizinin elemanlarını giriniz: ");
         for (int i = 0; i < list.length; i++) {
             System.out.print((i + 1) + ". Elemanı: ");
@@ -29,7 +28,11 @@ public class SortArray {
     }
 
     public static void main(String[] args) {
-        int[] list = new int[5];
+        Scanner input = new Scanner(System.in);
+        System.out.print("Dizinin boyutu n: ");
+        int listSize = input.nextInt();
+        int[] list = new int[listSize];
+
         takeValue(list);
         sortArray(list);
         System.out.println("Sıralama: " + Arrays.toString(list));
